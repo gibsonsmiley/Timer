@@ -16,124 +16,17 @@
                     </tabBar>
                     <connections>
                         <segue destination="mUH-Ot-FL4" kind="relationship" relationship="viewControllers" id="TOR-KV-hhw"/>
-                        <segue destination="Lfn-gU-CRd" kind="relationship" relationship="viewControllers" id="n4R-5k-VfI"/>
+                        <segue destination="Fmy-IX-9EX" kind="relationship" relationship="viewControllers" id="n4R-5k-VfI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYw-Sg-tW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="249" y="331"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EKp-Kn-7dv">
-            <objects>
-                <viewController id="NmQ-lh-GQ3" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9No-TS-qCy"/>
-                        <viewControllerLayoutGuide type="bottom" id="mnt-qs-s8h"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="NeJ-d3-t9T">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ff3-82-USH">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <subviews>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="z6E-ik-784">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="2"/>
-                                    </progressView>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H9m-FX-jUt" userLabel="Top View">
-                                        <rect key="frame" x="0.0" y="2" width="600" height="216"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIO-qW-H1U" userLabel="Timer Label">
-                                                <rect key="frame" x="0.0" y="-66" width="42" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="R9d-zh-qqt" userLabel="Picker Stack View">
-                                                <rect key="frame" x="-62" y="0.0" width="724" height="216"/>
-                                                <subviews>
-                                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xbL-tb-EBq" userLabel="Hours Picker View">
-                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
-                                                    </pickerView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wen-Vf-JdJ" userLabel="Hour Label">
-                                                        <rect key="frame" x="320" y="0.0" width="42" height="216"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BxJ-pG-CVt" userLabel="Minutes Picker View">
-                                                        <rect key="frame" x="362" y="0.0" width="320" height="216"/>
-                                                    </pickerView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IH-3v-Vmh" userLabel="Minute Label">
-                                                        <rect key="frame" x="682" y="0.0" width="42" height="216"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gV3-Ol-ccW" userLabel="Middle View">
-                                        <rect key="frame" x="0.0" y="218" width="600" height="100"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hKy-oT-1k3" userLabel="Button Stack View">
-                                                <rect key="frame" x="0.0" y="-282" width="92" height="30"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edS-3Q-afc" userLabel="Pause Button">
-                                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
-                                                        <state key="normal" title="Button"/>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYl-AA-Mnn" userLabel="Start Button">
-                                                        <rect key="frame" x="46" y="0.0" width="46" height="30"/>
-                                                        <state key="normal" title="Button"/>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KPx-fe-eMI" userLabel="Bottom View">
-                                        <rect key="frame" x="0.0" y="318" width="600" height="169"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="H9m-FX-jUt" firstAttribute="leading" secondItem="ff3-82-USH" secondAttribute="leading" id="07s-cL-jfj"/>
-                                    <constraint firstItem="gV3-Ol-ccW" firstAttribute="top" secondItem="H9m-FX-jUt" secondAttribute="bottom" id="2WT-0g-iZe"/>
-                                    <constraint firstAttribute="trailing" secondItem="H9m-FX-jUt" secondAttribute="trailing" id="IRu-Em-yiH"/>
-                                    <constraint firstItem="H9m-FX-jUt" firstAttribute="top" secondItem="z6E-ik-784" secondAttribute="bottom" id="e43-wn-DEh"/>
-                                    <constraint firstItem="H9m-FX-jUt" firstAttribute="height" secondItem="KPx-fe-eMI" secondAttribute="height" id="fnc-h3-CAV"/>
-                                    <constraint firstItem="H9m-FX-jUt" firstAttribute="height" secondItem="gV3-Ol-ccW" secondAttribute="height" id="wvt-Sw-e7O"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="fnc-h3-CAV"/>
-                                        <exclude reference="wvt-Sw-e7O"/>
-                                    </mask>
-                                </variation>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ff3-82-USH" secondAttribute="trailing" id="1xe-6D-Nd0"/>
-                            <constraint firstItem="ff3-82-USH" firstAttribute="top" secondItem="9No-TS-qCy" secondAttribute="bottom" id="2ng-LL-hks"/>
-                            <constraint firstItem="ff3-82-USH" firstAttribute="leading" secondItem="NeJ-d3-t9T" secondAttribute="leading" id="7ph-mg-WlR"/>
-                            <constraint firstItem="mnt-qs-s8h" firstAttribute="top" secondItem="ff3-82-USH" secondAttribute="bottom" id="mgf-vP-0eG"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="TLl-6C-Wbr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N0M-d9-KME" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3091" y="-648"/>
-        </scene>
-        <!--View Controller-->
+        <!--Timer View Controller-->
         <scene sceneID="YzV-Ta-oeR">
             <objects>
-                <viewController id="Jdq-Jw-zlm" sceneMemberID="viewController">
+                <viewController id="Jdq-Jw-zlm" customClass="TimerViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ypo-0F-gTD"/>
                         <viewControllerLayoutGuide type="bottom" id="U3h-o9-9nY"/>
@@ -236,6 +129,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X2S-Ky-g4p"/>
+                    <connections>
+                        <outlet property="hourLabel" destination="MdX-ni-ImL" id="ra8-yo-XUM"/>
+                        <outlet property="hoursPicker" destination="SOl-Gf-Wqv" id="8ry-cU-Jpc"/>
+                        <outlet property="minutesLabel" destination="Wle-o1-iT5" id="0Fx-MC-8Ro"/>
+                        <outlet property="minutesPicker" destination="upX-fE-qJ1" id="OLR-G3-nfG"/>
+                        <outlet property="pauseButton" destination="rCW-0r-erD" id="4PX-b0-Aw5"/>
+                        <outlet property="startStopButton" destination="HoG-Ln-72U" id="uBp-ub-VdK"/>
+                        <outlet property="timerLabel" destination="jcl-oN-DwD" id="cru-60-BBd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kmU-AO-iLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -260,7 +162,7 @@
             </objects>
             <point key="canvasLocation" x="999" y="1"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="Q7d-bJ-l6k">
             <objects>
                 <viewController id="Lfn-gU-CRd" sceneMemberID="viewController">
@@ -271,13 +173,45 @@
                     <view key="view" contentMode="scaleToFill" id="nZo-sT-cvn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alarm View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzQ-2W-rhF">
+                                <rect key="frame" x="217" y="289" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WzQ-2W-rhF" firstAttribute="centerX" secondItem="nZo-sT-cvn" secondAttribute="centerX" id="JDV-ca-h2L"/>
+                            <constraint firstItem="ekg-Ee-YM1" firstAttribute="top" secondItem="WzQ-2W-rhF" secondAttribute="bottom" constant="241" id="PJO-Vc-VbD"/>
+                            <constraint firstItem="WzQ-2W-rhF" firstAttribute="centerY" secondItem="nZo-sT-cvn" secondAttribute="centerY" id="kcN-Ii-P1S"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="1dC-uH-E7X"/>
+                    <navigationItem key="navigationItem" id="dAy-JH-q4H"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nRL-Ip-3cR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1449" y="897"/>
+            <point key="canvasLocation" x="1811" y="679"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="KBN-2q-P5L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fmy-IX-9EX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="1dC-uH-E7X"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f6j-V2-ve0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Lfn-gU-CRd" kind="relationship" relationship="rootViewController" id="TPT-xQ-tqC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ba0-Xl-DAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="999" y="679"/>
         </scene>
     </scenes>
 </document>

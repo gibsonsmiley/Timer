@@ -9,6 +9,13 @@
 import UIKit
 
 class TimerViewController: UIViewController {
+    @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var hoursPicker: UIPickerView!
+    @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var minutesPicker: UIPickerView!
+    @IBOutlet weak var minutesLabel: UILabel!
+    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var startStopButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +27,8 @@ class TimerViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
     
 
     /*

@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+class AppearanceController {
+    
+    static func initializeAppearance() {
+        
+        UITabBar.appearance().tintColor = UIColor.orangeColor2()
+        
+        
+    
+    
+    }
+    
+}
