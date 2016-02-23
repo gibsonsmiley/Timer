@@ -9,27 +9,34 @@
 import UIKit
 
 class AlarmViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var setButton: UIButton!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var messageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        datePicker.minimumDate = NSDate()
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func alarmSetView() {
+        
     }
-    */
-
+    
+    func alarmNotSetView() {
+        
+    }
+    
+    @IBAction func setButtonTapped(sender: AnyObject) {
+        
+    }
 }

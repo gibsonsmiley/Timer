@@ -13,8 +13,14 @@ class AppearanceController {
     
     static func initializeAppearance() {
         
-        UITabBar.appearance().tintColor = UIColor.orangeColor2()
+        UITabBar.appearance().barTintColor = UIColor.blackColor()
+        UITabBar.appearance().tintColor = UIColor.whiteColor()
         
+        UINavigationBar.appearance().barTintColor = UIColor.blackColor()
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        
+        UIStatusBarStyle.LightContent
         
     
     
